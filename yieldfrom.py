@@ -2,7 +2,7 @@ def test():
 	i = 1
 	while i<7:
 		n = yield i
-		if i==6:
+		if i==4:
 			return 100
 		i += 1
 		
@@ -11,6 +11,7 @@ def yf():
 	print(val)
 	
 t = yf()
+#t = test()
 t.send(None)
 j=0
 while j<6:
